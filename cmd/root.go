@@ -626,9 +626,9 @@ func newRunCommand(ctx context.Context, input *Input) func(*cobra.Command, []str
 					localRepositories[k] = v
 				}
 				config.ActionCache = &runner.LocalRepositoryCache{
-					Parent:            config.ActionCache
-					LocalRepositories: localRepositories
-					CacheDirCache:     map[string]string{}
+					Parent:            config.ActionCache,
+					LocalRepositories: localRepositories,
+					CacheDirCache:     map[string]string{},
 				}
 			}
 		}

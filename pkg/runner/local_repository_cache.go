@@ -2,11 +2,13 @@ package runner
 
 import (
 	"archive/tar"
+	"bytes"
 	"context"
-	"filepath"
+	"path/filepath"
 	"fmt"
 	"io"
 	"io/fs"
+	"os"
 	"strings"
 )
 
@@ -25,7 +27,7 @@ func (l *LocalRepositoryCache) Fetch(ctx context.Context, cacheDir, url, ref, to
 }
 
 func (l *LocalRepositoryCache) GetTarArchive(ctx context.Context, cacheDir, sha, includePrefix string) (io.ReadCloser, error) {
-	if dest, ok := l.CacheDirCache[cacheDir]; ok {
+	if srcPath, ok := l.CacheDirCache[cacheDir]; ok {
 		buf := &bytes.Buffer{}
 		tw := tar.NewWriter(buf)
 		defer tw.Close()
