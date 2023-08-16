@@ -4,11 +4,11 @@ import (
 	"archive/tar"
 	"bytes"
 	"context"
-	"path/filepath"
 	"fmt"
 	"io"
 	"io/fs"
 	"os"
+	"path/filepath"
 	"strings"
 )
 
