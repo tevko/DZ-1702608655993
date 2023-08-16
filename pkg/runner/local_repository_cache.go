@@ -27,7 +27,8 @@ func (l *LocalRepositoryCache) Fetch(ctx context.Context, cacheDir, url, ref, to
 }
 
 func (l *LocalRepositoryCache) GetTarArchive(ctx context.Context, cacheDir, sha, includePrefix string) (io.ReadCloser, error) {
-	if srcPath, ok := l.CacheDirCache[cacheDir]; ok {
+	if dest, ok := l.CacheDirCache[cacheDir]; ok {
+		srcPath := filepath.Join(dest, includePrefix)
 		buf := &bytes.Buffer{}
 		tw := tar.NewWriter(buf)
 		defer tw.Close()
