@@ -57,6 +57,7 @@ type Input struct {
 	actionCachePath                    string
 	logPrefixJobID                     bool
 	useNewActionCache                  bool
+	localRepository                    []string
 }
 
 func (i *Input) resolve(path string) string {

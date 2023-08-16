@@ -97,6 +97,7 @@ func Execute(ctx context.Context, version string) {
 	rootCmd.PersistentFlags().Uint16VarP(&input.cacheServerPort, "cache-server-port", "", 0, "Defines the port where the artifact server listens. 0 means a randomly available port.")
 	rootCmd.PersistentFlags().StringVarP(&input.actionCachePath, "action-cache-path", "", filepath.Join(CacheHomeDir, "act"), "Defines the path where the actions get cached and host workspaces created.")
 	rootCmd.PersistentFlags().BoolVarP(&input.useNewActionCache, "use-new-action-cache", "", false, "Enable using the new Action Cache for storing Actions locally")
+	rootCmd.PersistentFlags().StringArrayVarP(&input.localRepository, "local-repository", "", false, "Replaces the specified repository and ref with a local folder")
 	rootCmd.SetArgs(args())
 
 	if err := rootCmd.Execute(); err != nil {
@@ -613,9 +614,21 @@ func newRunCommand(ctx context.Context, input *Input) func(*cobra.Command, []str
 			ReplaceGheActionTokenWithGithubCom: input.replaceGheActionTokenWithGithubCom,
 			Matrix:                             matrixes,
 		}
-		if input.useNewActionCache {
+		if input.useNewActionCache || len(input.localRepository) > 0 {
 			config.ActionCache = &runner.GoGitActionCache{
 				Path: CacheHomeDir,
+			}
+			if len(input.localRepository) > 0 {
+				localRepositories := map[string]string{}
+				for _, l := range input.localRepository {
+					k, v := strings.Cut(l, "=")
+					localRepositories[k] = v
+				}
+				config.ActionCache = &runner.LocalRepositoryCache{
+					Parent:            config.ActionCache
+					LocalRepositories: localRepositories
+					CacheDirCache:     map[string]string{}
+				}
 			}
 		}
 		r, err := runner.New(config)
