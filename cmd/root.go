@@ -617,7 +617,7 @@ func newRunCommand(ctx context.Context, input *Input) func(*cobra.Command, []str
 		}
 		if input.useNewActionCache || len(input.localRepository) > 0 {
 			config.ActionCache = &runner.GoGitActionCache{
-				Path: CacheHomeDir,
+				Path: config.ActionCacheDir,
 			}
 			if len(input.localRepository) > 0 {
 				localRepositories := map[string]string{}
