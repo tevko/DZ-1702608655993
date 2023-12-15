@@ -1,0 +1,265 @@
+dev:
+  commands:
+  - command: go mod download
+    directory: act
+    name: install cmd
+  - command: npm install
+    directory: act/pkg/runner/testdata/actions/node20
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/whatwg-url
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/before-after-hook
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/deprecation
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/tunnel
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@vercel/ncc
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/universal-user-agent
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/is-plain-object
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/webidl-conversions
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/wrappy
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/once
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/uuid
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/openapi-types
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/auth-token
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/plugin-rest-endpoint-methods
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/graphql
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/types
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/endpoint
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/plugin-paginate-rest
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/core
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/request-error
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@octokit/request
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/node-fetch
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@actions/core
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@actions/http-client
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@actions/github
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/@actions/github/node_modules/@actions/http-client
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node20/node_modules/tr46
+    name: install cmd
+  - command: npm install
+    directory: act/pkg/runner/testdata/actions/node12
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/whatwg-url
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/before-after-hook
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/deprecation
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/tunnel
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@vercel/ncc
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/universal-user-agent
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/is-plain-object
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/webidl-conversions
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/wrappy
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/once
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/uuid
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/openapi-types
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/auth-token
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/plugin-rest-endpoint-methods
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/graphql
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/types
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/endpoint
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/plugin-paginate-rest
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/core
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/request-error
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@octokit/request
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/node-fetch
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@actions/core
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@actions/http-client
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@actions/github
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/@actions/github/node_modules/@actions/http-client
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node12/node_modules/tr46
+    name: install cmd
+  - command: npm install
+    directory: act/pkg/runner/testdata/actions/node16
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/whatwg-url
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/before-after-hook
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/deprecation
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/tunnel
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@vercel/ncc
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/universal-user-agent
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/is-plain-object
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/webidl-conversions
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/wrappy
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/once
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/uuid
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/openapi-types
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/auth-token
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/plugin-rest-endpoint-methods
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/graphql
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/types
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/endpoint
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/plugin-paginate-rest
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/core
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/request-error
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@octokit/request
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/node-fetch
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@actions/core
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@actions/http-client
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@actions/github
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/@actions/github/node_modules/@actions/http-client
+    name: install cmd
+  - command: npm i
+    directory: act/pkg/runner/testdata/actions/node16/node_modules/tr46
+    name: install cmd
+  name: ""
+  packages:
+  - nixpkgs.docker
+  - nixpkgs.go
+  - nixpkgs.nodejs_18
+  - nixpkgs.nodejs_21
+  repos:
+  - https://github.com/nektos/act
